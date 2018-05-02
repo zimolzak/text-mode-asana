@@ -1,0 +1,47 @@
+{
+    "liked": false, 
+    "completed_at": null, 
+    "num_likes": 0, 
+    "likes": [], 
+    "hearted": false, 
+    "id": ---------------, 
+    "num_hearts": 0, 
+    "followers": [
+        {
+            "id": ------------, 
+            "name": "Andrew Zimolzak"
+        }
+    ], 
+    "assignee_status": "upcoming", 
+    "parent": null, 
+    "tags": [], 
+    "completed": false, 
+    "start_on": null, 
+    "projects": [
+        {
+            "id": ---------------, 
+            "name": "----------"
+        }
+    ], 
+    "name": "Learn to use Nunchucks", 
+    "assignee": null, 
+    "due_at": null, 
+    "notes": "Note: This is a test task created with the python-asana client.", 
+    "modified_at": "2018-05-02T13:31:20.219Z", 
+    "memberships": [
+        {
+            "project": {
+                "id": ---------------, 
+                "name": "----------"
+            }, 
+            "section": null
+        }
+    ], 
+    "due_on": null, 
+    "workspace": {
+        "id": -------------, 
+        "name": "--------"
+    }, 
+    "hearts": [], 
+    "created_at": "2018-05-02T13:31:20.219Z"
+}
