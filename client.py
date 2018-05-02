@@ -25,8 +25,15 @@ def user_select_option(message, options):
     index = int(input("Enter choice (default 0): ") or 0)
     return option_lst[index]
 
-AAT = open('access_token.txt', 'r').read().splitlines()[0]
-client = asana.Client.access_token(AAT)
+try:
+    AAT = open('access_token.txt', 'r').read().splitlines()[0]
+except IOError as e:
+    print "Cannot open access token file."
+    print e
+    quit()
+
+client = asana.Client.access_token(AAT) # how to catch exception?
+
 workspaces = client.workspaces.find_all()
 workspace = user_select_option("Please choose a workspace", workspaces)
 projects = client.projects.find_all({'workspace': workspace['id']})
